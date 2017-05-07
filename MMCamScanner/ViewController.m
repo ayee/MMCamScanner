@@ -80,7 +80,7 @@
 /*OCR Method Implementation*/
 -(void)OCR:(UIImage *)image{
     // Create RecognitionOperation
-    G8RecognitionOperation *operation = [[G8RecognitionOperation alloc] init];
+    G8RecognitionOperation *operation = [[G8RecognitionOperation alloc] initWithLanguage:@"eng"];
     
     // Configure inner G8Tesseract object as described before
     operation.tesseract.language = @"eng";

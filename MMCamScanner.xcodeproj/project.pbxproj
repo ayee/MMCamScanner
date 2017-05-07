@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1180D3E41EBF665700D6F658 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1180D3E31EBF665700D6F658 /* opencv2.framework */; };
 		550931641B26C2A500E243F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 550931631B26C2A500E243F8 /* main.m */; };
 		550931671B26C2A500E243F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 550931661B26C2A500E243F8 /* AppDelegate.m */; };
 		5509316A1B26C2A500E243F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550931691B26C2A500E243F8 /* ViewController.m */; };
@@ -35,7 +36,6 @@
 		556A92A01B70D16C00187063 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A929E1B70D16C00187063 /* ProgressHUD.m */; };
 		5570AFB91B4122F900978131 /* UploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570AFB81B4122F900978131 /* UploadManager.m */; };
 		5585D5C91B8D796F00DB7D3F /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5585D5C81B8D796F00DB7D3F /* TesseractOCR.framework */; };
-		5585D5CB1B8D797C00DB7D3F /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5585D5CA1B8D797C00DB7D3F /* opencv2.framework */; };
 		55C807CA1B4AA5A700C096BF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C807C91B4AA5A700C096BF /* CoreTelephony.framework */; };
 		55FDF9971B2A9061001400E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FDF9961B2A9061001400E1 /* ViewController.swift */; };
 		55FDF9991B2AAEA7001400E1 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FDF9981B2AAEA7001400E1 /* AssetsLibrary.framework */; };
@@ -53,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1180D3E31EBF665700D6F658 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../ios/opencv2.framework; sourceTree = "<group>"; };
 		5509315E1B26C2A500E243F8 /* MMCamScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMCamScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		550931621B26C2A500E243F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550931631B26C2A500E243F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,7 +99,6 @@
 		5570AFB71B4122F900978131 /* UploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadManager.h; sourceTree = "<group>"; };
 		5570AFB81B4122F900978131 /* UploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadManager.m; sourceTree = "<group>"; };
 		5585D5C81B8D796F00DB7D3F /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
-		5585D5CA1B8D797C00DB7D3F /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		55C807C91B4AA5A700C096BF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		55FDF9951B2A9060001400E1 /* MMCamScanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMCamScanner-Bridging-Header.h"; sourceTree = "<group>"; };
 		55FDF9961B2A9061001400E1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,10 +112,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1180D3E41EBF665700D6F658 /* opencv2.framework in Frameworks */,
 				554243B51B666D49000FEB8D /* MobileCoreServices.framework in Frameworks */,
 				55C807CA1B4AA5A700C096BF /* CoreTelephony.framework in Frameworks */,
 				5556DD7E1B314FEA00564C82 /* CoreImage.framework in Frameworks */,
-				5585D5CB1B8D797C00DB7D3F /* opencv2.framework in Frameworks */,
 				554649881B3055C8003B2AC4 /* libstdc++.dylib in Frameworks */,
 				5585D5C91B8D796F00DB7D3F /* TesseractOCR.framework in Frameworks */,
 				55FDF9991B2AAEA7001400E1 /* AssetsLibrary.framework in Frameworks */,
@@ -134,6 +134,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1180D3E21EBF665500D6F658 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1180D3E31EBF665700D6F658 /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		550931551B26C2A500E243F8 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +155,7 @@
 				5509315F1B26C2A500E243F8 /* Products */,
 				550931891B26C50900E243F8 /* FrameWorks */,
 				55FDF9951B2A9060001400E1 /* MMCamScanner-Bridging-Header.h */,
+				1180D3E21EBF665500D6F658 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,7 +226,6 @@
 		550931891B26C50900E243F8 /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
-				5585D5CA1B8D797C00DB7D3F /* opencv2.framework */,
 				5585D5C81B8D796F00DB7D3F /* TesseractOCR.framework */,
 				5556DD7D1B314FEA00564C82 /* CoreImage.framework */,
 				55FDF9981B2AAEA7001400E1 /* AssetsLibrary.framework */,
@@ -322,6 +330,7 @@
 				TargetAttributes = {
 					5509315D1B26C2A500E243F8 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0830;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -525,12 +534,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Tesseract-OCR-iOS/";
 				INFOPLIST_FILE = MMCamScanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MMCamScanner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -544,11 +555,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Tesseract-OCR-iOS/";
 				INFOPLIST_FILE = MMCamScanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MMCamScanner-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
